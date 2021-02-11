@@ -19,7 +19,7 @@ public class Fuvar {
         for (int i = 1; i < sorok.size(); i++) {
             fuvarok.add(new FuvarBont(sorok.get(i)));
         }
-        System.out.println(fuvarok.size());
+        //System.out.println(fuvarok.size());
         
         
     }
