@@ -19,7 +19,17 @@ public class FuvarProgram {
         for (int i = 1; i < sorok.size(); i++) {
             fuvarok.add(new Fuvar(sorok.get(i)));
         }
-        System.out.println(fuvarok.size());
+        System.out.println("3. feladat: "+fuvarok.size()+" fuvar");
+        
+        int maxfuvar=0;
+        for (int i = 1; i < sorok.size(); i++) {
+            if (sorok.get(i)>maxfuvar) {
+                maxfuvar=sorok.get(i);
+            }
+        }
+        
+        
+        System.out.println("4. feladat:");
         
         
     }
