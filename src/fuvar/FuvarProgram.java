@@ -33,13 +33,14 @@ public class FuvarProgram {
 
         double osszzMerfold = 0;
         System.out.println("6. feladat:");
-        for (int i = 1; i < fuvarok.size(); i++) {
+        for (int i = 0; i < fuvarok.size(); i++) {
             osszzMerfold = osszzMerfold + fuvarok.get(i).getTavolsag();
         }
-        double vegered = osszzMerfold / 1.6;
-        System.out.println(osszzMerfold);
-//        System.out.println("6. feladat : "+vegered+" km");
-        System.out.println(vegered);
+        double osszKm = osszzMerfold * 1.6;
+        System.out.printf("6. feladat : %.2f ",osszKm);
+        
+        String kimenet="nincs hiba";
+        Files.write(Paths.get("hiba.txt"), kimenet.getBytes());
 
     }
 
